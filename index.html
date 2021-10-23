@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="./static-assets/css/all.css" rel="stylesheet">
+    <title>87-lux</title>
+</head>
+<body>
+    <nav>
+        <img class="logo" src="./images/logo.png" alt="logo"/>
+        <div class="menu">
+            <div class="marker"></div>
+            <a href="#">products</a>
+            <a href="#">story</a>
+            <a href="#">manufacturing</a>
+            <a href="#">packaging</a>
+        </div>
+        <div class="options">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <i class="fas fa-shopping-basket"></i>
+            <i class="far fa-user"></i>
+        </div>
+    </nav>
+    <section class="buy">
+            <div class="buy__image__container">
+                <img class="buy__image" src="./images/k_1.png" alt="organic tea"/>
+            </div>
+            <div class="buy__info">
+                <div class="mini-heading">
+                    <span>ORGANIC TEA</span>
+                    <div></div>
+                </div>
+                <div class="big-heading">
+                    <h1>SPARKLING. TEA </h1>
+                    <h1>KOMBUCHA</h1>
+                </div>
+                <p>Sparkling teas are essentially a mix of soda
+                    and tea, a cold, carbonated version of the 
+                    healthy classic-and health experts love them.
+                    "These beverages can provide the benefits of the 
+                    tea in them," says Jessica Cording, R.D.
+                </p>
+                <span class="buy__info__price">$89.99</span>
+                <!-- <div class="dash__2"></div> -->
+                <button>BUY NOW</button>
+                <div class="tea__choice">
+                    <div class="filler"></div>
+                    <div class="tea__options">
+                        <div class="opt__1">
+                            <small>INGREDIENTS</small>
+                            <p>100% Organic</p>
+                        </div>
+                        <div class="opt__2">
+                            <small>FLAVORS</small>
+                            <p>5 variations</p>
+                        </div>
+                        <div class="opt__3">
+                            <small>VOLUME</small>
+                            <p>465ml</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    
+
+
+    <script type="text/javascript">
+        let marker = document.querySelector(".marker");
+        let item = document.querySelectorAll("nav a");
+
+        function indicator(e){
+            marker.style.left = e.offsetLeft+"px";
+            marker.style.width = e.offsetWidth+"px";
+        }
+        item.forEach(link => {
+            link.addEventListener("click", (e)=>{
+                indicator(e.target)
+            })
+        })
+    </script>
+</body>
+</html>

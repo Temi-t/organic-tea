@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+:root {
+  --mygrey: #4d4d4d;
+  --myorange: #ff3300;
+}
+body {
+}
+
+nav {
+  position: relative;
+  height: 4rem;
+  width: 100%;
+  /* background: pink; */
+  display: flex;
+  cursor: pointer;
+}
+nav .menu a {
+  position: relative;
+  top: 5px;
+  margin: 0 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--mygrey);
+  text-decoration: none;
+}
+nav .menu .marker {
+  position: absolute;
+  bottom: 0px;
+  height: 0.15rem;
+  width: 0;
+  transition: 0.4s;
+  background: var(--myorange);
+  border-radius: 4px;
+}
+.logo {
+  margin-left: 5rem;
+  height: 4rem;
+  width: 9rem;
+  object-fit: contain;
+}
+.menu {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15rem;
+  /* background: aqua; */
+}
+.options {
+  display: flex;
+  /* background: rgb(134, 134, 82); */
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  color: var(--mygrey);
+  margin-right: 3.5rem;
+}
+.buy {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  width: 100%;
+  height: fit-content;
+}
+.buy__image__container {
+  min-width: 40%;
+}
+.buy__image {
+  flex: 1;
+  object-fit: contain;
+  width: 100%;
+  height: 80%;
+}
+.buy__info {
+  flex: 1;
+  width: 100%;
+  /* height: 470px; */
+  height: fit-content;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  padding-left: 1rem;
+  /* background: rgb(80, 129, 129); */
+}
+.mini-heading {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  font-size: 4vw;
+}
+.mini-heading span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--mygrey);
+}
+.mini-heading > div {
+  width: 3rem;
+  margin-left: 10px;
+  height: 1px;
+  background: var(--mygrey);
+}
+.big-heading > h1 {
+  font-size: 5vw;
+  font-weight: normal;
+  color: var(--mygrey);
+}
+.big-heading > h1:nth-child(2) {
+  color: var(--myorange);
+  font-weight: 600;
+  font-size: 6vw;
+  letter-spacing: 5px;
+}
+.buy__info > p {
+  font-size: 1.5rem;
+  color: var(--mygrey);
+  padding-left: 11px;
+  margin-bottom: 2rem;
+}
+.buy__info__price {
+  font-size: 4vw;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  /* padding-bottom: 1rem; */
+  /* background: pink; */
+  max-width: 16vw;
+  color: var(--mygrey);
+  border-bottom: 1px solid var(--mygrey);
+}
+.dash__2 {
+  width: 11rem;
+  margin-left: 10px;
+  height: 1px;
+  background: var(--mygrey);
+  margin-bottom: 2rem;
+}
+.buy__info > button {
+  width: 10rem;
+  font-size: 1.5vw;
+  padding: 7px;
+}
+.tea__options {
+  /* width: 50%; */
+  height: fit-content;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  /* padding-right: 8rem; */
+  margin-right: 7rem;
+  display: flex;
+  /* background: pink; */
+  justify-content: space-between;
+}
+/* tea__choice section */
+.tea__choice {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+/* .filler {
+  flex: 1;
+  height: 10px;
+  width: 33%;
+  background: grey;
+} */
+.tea__options {
+  /* flex: 2; */
+  width: 100%;
+  /* flex-flow: row-reverse; */
+}
+.opt__1 small,
+.opt__2 small,
+.opt__3 small {
+  color: var(--mygrey);
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+.opt__1 p,
+.opt__2 p,
+.opt__3 p {
+  color: var(--myorange);
+  font-weight: bold;
+  font-size: 1.5vw;
+  /* background: rgb(73, 46, 46); */
+  padding-top: 0.5rem;
+  /* height: 2rem; */
+}
