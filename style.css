@@ -74,7 +74,7 @@ nav .menu .marker {
   flex: 1;
   object-fit: contain;
   width: 100%;
-  height: 80%;
+  height: 90%;
 }
 .buy__info {
   flex: 1;
@@ -138,10 +138,17 @@ nav .menu .marker {
   background: var(--mygrey);
   margin-bottom: 2rem;
 }
-.buy__info > button {
-  width: 10rem;
-  font-size: 1.5vw;
-  padding: 7px;
+.buy__info button {
+  background: var(--mygrey);
+  padding: 1rem;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  width: 13rem;
+}
+.buy__info button:hover {
+  opacity: 0.5;
 }
 .tea__options {
   /* width: 50%; */
@@ -186,4 +193,192 @@ nav .menu .marker {
   /* background: rgb(73, 46, 46); */
   padding-top: 0.5rem;
   /* height: 2rem; */
+}
+.brands {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+.brands img {
+  object-fit: contain;
+  padding: 10px;
+  /* height: 3rem; */
+}
+.features {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--mygrey);
+  padding: 3rem;
+  padding-top: 5rem;
+  /* background: aqua; */
+}
+.features h1 {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+.feature__icons {
+  /* background: pink; */
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4rem;
+  text-align: center;
+  color: var(--mygrey);
+}
+.caption {
+  padding: 2rem;
+}
+.features button {
+  background: var(--mygrey);
+  padding: 1rem;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+}
+.features button:hover {
+  opacity: 0.5;
+}
+/* Arie section */
+.arie {
+  /* background: aqua; */
+}
+.arie__top {
+  width: 80%;
+  height: fit-content;
+  text-align: center;
+  padding: 2rem;
+  margin: auto;
+  color: var(--mygrey);
+}
+.arie__top h1 {
+  font-size: 2rem;
+}
+.arie__top p {
+  font-size: bold;
+}
+.arie__vessel {
+  /* background: pink; */
+}
+.arie__container {
+  display: flex;
+  width: 55%;
+  flex-direction: column;
+  height: fit-content;
+  text-align: left;
+  padding: 4rem 0 4rem 6rem;
+  /* background: aqua; */
+}
+.arie__container span {
+  color: var(--myorange);
+  font-size: bold;
+}
+.arie__container h1 {
+  color: var(--mygrey);
+  /* background: yellow; */
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.arie__container p {
+  color: var(--mygrey);
+  /* padding: 1rem; */
+  padding-bottom: 2rem;
+}
+.arie__container button {
+  background: var(--mygrey);
+  padding: 1rem;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  width: 14rem;
+  cursor: pointer;
+}
+.arie__container button:hover {
+  opacity: 0.5;
+}
+.arie img {
+  width: 45%;
+  height: 30rem;
+  object-fit: contain;
+}
+.arie__pairs {
+  display: flex;
+  height: fit-content;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 3rem;
+  /* background: rgb(122, 116, 117); */
+}
+.popular {
+  width: 80%;
+  height: fit-content;
+  color: var(--mygrey);
+  margin: auto;
+  /* background: aqua; */
+  padding: 4rem;
+  font-size: large;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dash__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  /* background: pink; */
+}
+.num__dash {
+  width: 2rem;
+  height: 1px;
+  background: var(--mygrey);
+}
+.fader {
+  opacity: 0.5;
+}
+.small__arie__pairs {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  width: 100%;
+  padding-bottom: 3rem;
+  background: rgb(122, 116, 117);
+}
+.small__arie__container {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  height: fit-content;
+  text-align: left;
+  padding: 4rem 0 4rem 6rem;
+  /* background: aqua; */
+}
+.small__arie__container p {
+  color: var(--mygrey);
+  padding-bottom: 2rem;
+}
+.small__arie__container button {
+  background: var(--mygrey);
+  padding: 1rem;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  width: 14rem;
+  cursor: pointer;
+}
+.small__arie__container button:hover {
+  opacity: 0.5;
 }
