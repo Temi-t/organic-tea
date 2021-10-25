@@ -109,15 +109,20 @@ nav .menu .marker {
   background: var(--mygrey);
 }
 .big-heading > h1 {
-  font-size: 5vw;
+  /* font-size: 5vw; */
+  font-size: 3rem;
+  /* max-width: 80%; */
   font-weight: normal;
   color: var(--mygrey);
+  line-height: 5rem;
+  /* background:crimson */
 }
 .big-heading > h1:nth-child(2) {
   color: var(--myorange);
   font-weight: 600;
-  font-size: 6vw;
-  letter-spacing: 5px;
+  font-size: 4rem;
+  /* font-size: 6vw; */
+  letter-spacing: 3px;
 }
 .buy__info > p {
   font-size: 1.5rem;
@@ -222,6 +227,7 @@ nav .menu .marker {
   padding: 4rem;
   text-align: center;
   color: var(--mygrey);
+  /* background: yellow; */
 }
 .caption {
   padding: 2rem;
@@ -329,7 +335,7 @@ nav .menu .marker {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 30%;
+  width: 15rem;
 }
 .num__dash {
   width: 2rem;
@@ -395,8 +401,7 @@ nav .menu .marker {
   width: 80%;
   margin: auto;
 }
-.stats img {
-}
+.stats img {}
 .stats_container {
   display: flex;
   flex-wrap: wrap;
@@ -500,6 +505,9 @@ footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+.kombucha__menu__container h1 {
+  padding-left: 10px;
+}
 .kombucha__menu,
 .cartegories,
 .about__us {
@@ -507,11 +515,8 @@ footer {
   flex-direction: column;
   justify-content: left;
   height: 100%;
-  width: 30%;
-  padding-left: 1rem;
-}
-.about__us {
-  padding-left: 3rem;
+  width: 33%;
+  margin: auto;
 }
 .kombucha__menu p,
 .cartegories p,
@@ -534,11 +539,23 @@ footer {
   /* .logo-2 {
     display: visible;
   } */
+  .big-heading > h1 {
+    font-size: 2rem;;
+    line-height: 5rem;
+  }
+  .big-heading > h1:nth-child(2) {
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+  }
+  .buy__info > p{
+     font-size: 1.2rem;
+     max-width: 90%;
+  }
   .buy__image__container {
     width: 100%;
   }
   .buy__info {
-    /* text-align: center; */
     justify-content: center;
     align-items: center;
   }
@@ -550,7 +567,15 @@ footer {
   .opt__2 p,
   .opt__3 p {
     font-size: 1.2rem;
+  }
+  .opt__1 ,
+  .opt__2 ,
+  .opt__3 {
+    padding-right: 2rem;
+  }
+  .caption {
     padding-top: 0;
+    font-weight: bold;
   }
   .arie__pairs {
     flex-direction: column;
@@ -565,6 +590,10 @@ footer {
     width: 80%;
     padding: 2rem 0 4rem 0;
     margin: auto;
+  }
+  .arie__container h1{
+    padding: 0;
+    line-height: 2.5rem;
   }
   .popular {
     flex-direction: column;
@@ -590,9 +619,11 @@ footer {
     padding: 1rem 0 1rem 2rem;
   }
   .small__arie__info h1 {
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
+    font-size: 1.4rem;
+    padding-bottom: 0;
     padding-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 2rem;
   }
   .small__arie__pairs img {
     width: 100%;
@@ -611,5 +642,27 @@ footer {
   }
   .stats {
     flex-wrap: wrap;
+  }
+  .kombucha__menu h1,
+  .cartegories h1,
+  .about__us h1 {
+    font-size: 1rem;
+  }
+  .kombucha__menu p,
+  .cartegories p,
+  .about__us p {
+    line-height: 1rem;
+  }
+}
+@media(min-width: 620px){
+  .footer__container {
+    background: #f2f2f2;
+    flex-wrap: wrap;
+  }
+  .kombucha__menu__container {
+    flex-wrap: wrap;
+    flex: 1;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
   }
 }
