@@ -557,6 +557,8 @@ footer {
     align-items: center;
   }
   .arie img {
+    max-width: 90%;
+    margin: auto;
   }
   .arie__container {
     flex-direction: column;
@@ -600,6 +602,12 @@ footer {
     margin: auto;
     flex-wrap: wrap;
     flex-direction: column;
+  }
+  .testimonial p {
+    max-width: 90%;
+    margin: auto;
+    padding: 0;
+    text-align: center;
   }
   .stats {
     flex-wrap: wrap;
